@@ -35,7 +35,7 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="/" class="nav-link">Почетна</a></li>
+					<li class="nav-item"><a href="/" class="nav-link">Почетна</a></li>
 					<li class="nav-item"><a href="/about" class="nav-link">О нама</a></li>
 					<li class="nav-item"><a href="/menu" class="nav-link">Мени</a></li>
 					<li class="nav-item"><a href="/reservation" class="nav-link">Резервације</a></li>

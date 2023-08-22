@@ -75,81 +75,13 @@ $page = "Мени"
 					<div class="heading-menu text-center ftco-animate">
 						<h3>Дезерти</h3>
 					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/dessert-1.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/dessert-2.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/dessert-3.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/dessert-4.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus border-bottom-0 d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/dessert-5.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
+
+					@foreach($menu as $item)
+						@if($item->category == 'Дезерт')
+							<x-menu-item-card :item="$item" />
+						@endif
+					@endforeach					
+					
 					<span class="flat flaticon-cupcake" style="left: 0;"></span>
 					<span class="flat flaticon-ice-cream" style="right: 0;"></span>
 				</div>
@@ -160,126 +92,13 @@ $page = "Мени"
 					<div class="heading-menu text-center ftco-animate">
 						<h3>Винска Карта</h3>
 					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-1.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-2.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-3.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-4.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-5.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-6.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-7.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus border-bottom-0 d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/wine-8.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
+					
+					@foreach($menu as $item)
+						@if($item->category == 'Вина')
+							<x-menu-item-card :item="$item" />
+						@endif
+					@endforeach
+
 					<span class="flat flaticon-wine" style="left: 0;"></span>
 					<span class="flat flaticon-wine-1" style="right: 0;"></span>
 				</div>
@@ -290,111 +109,13 @@ $page = "Мени"
 					<div class="heading-menu text-center ftco-animate">
 						<h3>Пића</h3>
 					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-1.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-2.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-3.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-4.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-5.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-6.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
-					<div class="menus border-bottom-0 d-flex ftco-animate">
-						<div class="menu-img img" style="background-image: url(images/drink-7.jpg);"></div>
-						<div class="text">
-							<div class="d-flex">
-								<div class="one-half">
-									<h3>Beef Roast Source</h3>
-								</div>
-								<div class="one-forth">
-									<span class="price">$29</span>
-								</div>
-							</div>
-							<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span>
-							</p>
-						</div>
-					</div>
+					
+					@foreach($menu as $item)
+						@if($item->category == 'Пића')
+							<x-menu-item-card :item="$item" />
+						@endif
+					@endforeach
+					
 					<span class="flat flaticon-wine" style="left: 0;"></span>
 					<span class="flat flaticon-wine-1" style="right: 0;"></span>
 				</div>

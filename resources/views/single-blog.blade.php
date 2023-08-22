@@ -30,8 +30,8 @@
 
                     <div class="tag-widget post-tag-container mb-5 mt-5">
                         <div class="tagcloud">
-                            @foreach($tags as $t)
-                                <a href="" class="tag-cloud-link">{{$t}}</a>
+                            @foreach($tags as $item)
+                                <a href="" class="tag-cloud-link">{{$item}}</a>
                             @endforeach
                         </div>
                     </div>
@@ -82,16 +82,9 @@
                 <!-- SIDEBAR START -->
 
                 <div class="col-lg-4 sidebar ftco-animate">
-                    <div class="sidebar-box">
-                        <form action="#" class="search-form">
-                            <div class="form-group">
-                                <span class="icon icon-search"></span>
-                                <input type="text" class="form-control" placeholder="Претражи">
-                            </div>
-                        </form>
-                    </div>
+                    <br><br><br>
                     <div class="sidebar-box ftco-animate">
-                        <h3>Категорије</h3>
+                        <h3 style="font-weight: 700;">Категорије</h3>
                         <ul class="categories">
                             <li><a href="/blog/?category=Доручак">Доручак </a></li>
                             <li><a href="/blog/?category=Ручак">Ручак </a></li>
@@ -103,64 +96,29 @@
                     </div>
 
                     <div class="sidebar-box ftco-animate">
-                        <h3>Популарни чланци</h3>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about
-                                        the blind texts</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Aug. 3, 2020</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about
-                                        the blind texts</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Aug. 3, 2020</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about
-                                        the blind texts</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Aug. 3, 2020</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 style="font-weight: 700;">Популарни чланци</h3>
+
+                        @foreach($popular_blogs as $item)
+                            <x-popular-posts-card :item="$item"/>
+                        @endforeach
+
                     </div>
 
                     <div class="sidebar-box ftco-animate">
                         <h3>Тагови</h3>
                         <ul class="tagcloud m-0 p-0">
-                            <a href="#" class="tag-cloud-link">Dish</a>
-                            <a href="#" class="tag-cloud-link">Food</a>
-                            <a href="#" class="tag-cloud-link">Lunch</a>
-                            <a href="#" class="tag-cloud-link">Menu</a>
-                            <a href="#" class="tag-cloud-link">Dessert</a>
-                            <a href="#" class="tag-cloud-link">Drinks</a>
-                            <a href="#" class="tag-cloud-link">Sweets</a>
+                            @foreach($tags as $item)
+                                <a href="#" class="tag-cloud-link">{{$item}}</a>
+                            @endforeach
                         </ul>
                     </div>
 
 
                     <div class="sidebar-box ftco-animate">
                         <h3>Диверзија</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus
-                            voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur
-                            similique, inventore eos fugit cupiditate numquam!</p>
+                        <p>Диверзија је породични ресторан који је срцем и душом посвећен пружању изузетног гурманског доживљаја свима 
+                            који нас посете. Отворени смо са једним циљем - да Вам приуждимо место где ћете уживати у незаборавним моментима 
+                            окружени укусима који мамију осмех на лице.</p>
                     </div>
                 </div><!-- END COL -->
             </div>

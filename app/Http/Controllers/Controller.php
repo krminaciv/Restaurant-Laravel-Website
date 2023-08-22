@@ -93,10 +93,19 @@ class Controller extends BaseController
 
         $arr = preg_split("/\;/", $blog->text);
 
+        $popular = Blog::all();
+        $num = $popular->count();
+        $popular = $popular->slice($num - 3);
+        $popular = $popular->reverse();
+
+        $tags = preg_split("/\,/", $blog->tags);
+
         return view('single-blog', [
             'blog' => $blog,
             'arr' => $arr,
-            'comments' => Comment::all()
+            'comments' => Comment::all(),
+            'popular_blogs' => $popular,
+            'tags' => $tags
         ]);
     }
 

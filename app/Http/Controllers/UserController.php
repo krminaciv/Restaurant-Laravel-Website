@@ -101,6 +101,12 @@ class UserController extends Controller
 
     }
 
+    public function deleteBlog($id){
+        $item = Blog::find($id);
+        $item->delete();
+        return redirect('/dashboard/blog');
+    }
+
     public function showAddAdmin(){
         return view('users/add-admin');
     }
@@ -165,8 +171,14 @@ class UserController extends Controller
         //dd($request);
         $item = Menu::create($formFields);
 
-        return redirect('/dashboard');
+        return redirect('/dashboard/menu');
 
+    }
+
+    public function deleteMenu($id){
+        $item = Menu::find($id);
+        $item->delete();
+        return redirect('/dashboard/menu');
     }
 
     

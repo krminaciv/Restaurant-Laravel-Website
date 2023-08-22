@@ -13,7 +13,5 @@
                <button class="text-black-500"><i class="fas fa-trash"></i></button>
           </form>
      </td>
-     <td>
-          <a href="" target="_blank"><i class="fas fa-pencil-alt"></i></a>
-     </td>
+     <td></td>
 </tr>
