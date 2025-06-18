@@ -1,6 +1,6 @@
 # Restaurant Website 🍽️
 
-A modern restaurant website built with Laravel and SQL, featuring a beautiful frontend and an admin dashboard for managing menu items and blog posts.
+A modern restaurant website built with Laravel and SQL, featuring a nice frontend and an admin dashboard for managing menu items and blog posts.
 
 ## ✨ Features
 
