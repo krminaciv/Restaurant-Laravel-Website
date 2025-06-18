@@ -2,7 +2,7 @@
 
 A modern restaurant website built with Laravel and SQL, featuring a nice frontend and an admin dashboard for managing menu items and blog posts.
 
-## ✨ Features
+## Features
 
 - User-friendly and responsive frontend
 - Admin login with secure authentication
